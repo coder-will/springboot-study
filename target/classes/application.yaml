@@ -1,0 +1,31 @@
+person:
+  name: zhangjie
+  age: 3
+  happy: false
+  birth: 2019/11/02
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - music
+    - girl
+
+  Dog:
+    name: 旺财
+    age: 3
+
+server:
+  port: 8083
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8081
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8082
+spring:
+  profiles: test
